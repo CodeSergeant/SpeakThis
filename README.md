@@ -12,3 +12,5 @@ The SpeakThis module reads JSON strings in the following format: '{"priority": <
 Note: the keys can also be the first letter only of the normal keys (i.e. "volume" and "v" both work), and every property with the exception of the message to be spoken ("text") can be omitted. If omitted, default values are substituted, as defined in messageConfig.json. With regards to priority, the smaller the number, the earlier the message is spoken.
 
 As an example, to read "Hello World" in English, at at the highest priority, with a volume of 5 dB, at a rate of 150 wpm, with the EPSON parser, using the default voice, publish '{"priority": 1, "algorithm": 1, "language": 0, "volume": 5, "rate": 150, "text": "Hello World"}' to the topic SpeakThis (or whatever you set it to).
+
+See also: http://ceit.uq.edu.au/content/speakthis-mqtt-module-interfacing-emic-2-text-speech-converter
